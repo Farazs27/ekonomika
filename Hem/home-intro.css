@@ -1,0 +1,49 @@
+/********************************** Hem: fri text och bild beskuren som en myntstapel **********************************/
+
+/* Startsidessektionen — text och myntformad bild på sidans vanliga bakgrund */
+.home-intro {
+  padding: clamp(54px, 8vw, 110px) 0;
+  background: var(--paper);
+}
+
+/* Presentationstext till vänster och en enda beskuren bild till höger */
+.home-intro-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, .82fr);
+  align-items: center;
+  gap: clamp(28px, 6vw, 78px);
+}
+
+/* Texten ligger fritt — ingen bubbla, ruta eller färgad bakgrund */
+.home-intro-copy p {
+  max-width: 650px;
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(19px, 2vw, 25px);
+  line-height: 1.75;
+}
+
+/* Samma kontorsfoto beskuret som en sammanhängande stapel av tre mynt */
+.home-intro-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 6;
+}
+
+/* Mobil och smala fönster — texten visas före myntformen */
+@media (max-width: 680px) {
+  .home-intro {
+    padding: 48px 0;
+  }
+
+  .home-intro-inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .home-intro-image {
+    width: min(100%, 420px);
+    justify-self: center;
+  }
+}

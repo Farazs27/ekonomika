@@ -1,0 +1,41 @@
+    /********************************** Kontakt: innehåll och kontaktknapp **********************************/
+
+
+
+    /* Kontaktsektionen — mörkgrön bakgrund och textfärg */
+    .contact {
+      padding: 76px 0;
+      background: var(--dark);
+      color: white;
+    }
+    /* Kontaktsektionen — placering mellan text och kontaktknapp */
+    .contact-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 35px;
+    }
+    /* Kontaktens rubrik: ”Vill du vara med och forma idén?” */
+    .contact h2 {
+      max-width: 600px;
+      margin: 0 0 11px;
+      font-size: clamp(32px,4vw,45px);
+      line-height: 1.12;
+      font-weight: 600;
+    }
+    /* Kontaktens förklarande text under rubriken */
+    .contact p {
+      margin: 0;
+      color: #d0dbd3;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+    /* Kontaktknappen: ”Skriv till Ekonomika” — egen bakgrund och textfärg */
+    .contact .button {
+      flex: 0 0 auto;
+      background: #e4eddb;
+      color: var(--dark);
+    }
+
+
+
