@@ -1,3 +1,8 @@
+
+
+
+
+
 /********************************** Grundinställningar **********************************/
 
     /* FÄRGER OCH DESIGNVARIABLER — ändra var(--green), --paper osv. här */
@@ -49,7 +54,7 @@
     }
 
 
-    /********************************** Navigering **********************************/
+    /********************************** Navigering OCH LOGOTYP **********************************/
 
     /* Menyradens bakgrund — färg, genomskinlighet och suddig effekt */
     header {
@@ -75,12 +80,13 @@
       width: calc(100% - 48px);
       max-width: none;
     }
-    /* Logotypen i menyraden — placering och storlek */
+    /* LOGOTYPENS PLACERING Logotypen i menyraden — placering och storlek */
     .brand {
       display: flex;
       align-items: center;
       flex: 0 0 auto;
-      margin-left: -20px;
+      margin-left: 10px;
+      
 
   
     }
@@ -94,10 +100,13 @@
 }
 
 
-    /* Logotypbildens bredd i menyraden */
+    /* LOGOTYP STORLEK Logotypbildens bredd i menyraden */
+
+
+
     .brand img {
       display: block;
-      width: 320px;
+      width: 260px;
       height: auto;
       filter: brightness(0) invert(1);
 
