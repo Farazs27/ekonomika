@@ -74,12 +74,12 @@
   letter-spacing: -0.8px;
   line-height: 1.25;
   text-align: center;
-  margin-inline: auto;
+  margin-left: 0;
 }
 
-/* Rubriken hålls centrerad ovanför textrutan även när bilden ligger till vänster */
+/* Rubriken och textrutan får samma placering när bilden ligger till vänster */
 .home-service-image-left .home-service-content h2 {
-  margin-inline: auto;
+  margin-left: auto;
   text-align: center;
 }
 
