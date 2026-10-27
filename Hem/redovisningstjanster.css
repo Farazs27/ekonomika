@@ -2,12 +2,15 @@
 
 /* Tjänsteområdet — centrerad osynlig maxbredd som också beskär cirkelbilderna */
 .home-services {
+  --home-wave-overlap: clamp(80px, 23vw, 390px);
   container-type: inline-size;
   width: min(1120px, calc(100% - 48px));
   margin-inline: auto;
+  margin-top: calc(-1 * var(--home-wave-overlap));
+  margin-bottom: var(--home-wave-overlap);
   padding: 28px 0 72px;
   overflow: hidden;
-  background: #fff;
+  background: transparent;
 }
 
 /* Varje tjänst får en egen hög rad med plats för en stor cirkelbild */
