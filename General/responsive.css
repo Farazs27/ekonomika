@@ -140,7 +140,7 @@
       }
       /* Mobil — logotypens mindre bredd */
       .brand img {
-        width: 250px;
+        width: 150px;
         margin-left: -10px;
         transform: translateY(-4px);
       }
