@@ -73,13 +73,14 @@
   font-weight: 600;
   letter-spacing: -0.8px;
   line-height: 1.25;
-  text-align: left;
+  text-align: center;
+  margin-inline: auto;
 }
 
-/* När cirkeln ligger till vänster står rubriken på den fria ytan till höger */
+/* Rubriken hålls centrerad ovanför textrutan även när bilden ligger till vänster */
 .home-service-image-left .home-service-content h2 {
-  margin-left: auto;
-  text-align: right;
+  margin-inline: auto;
+  text-align: center;
 }
 
 /* Vit textruta — diskret kant, mjuk skugga och bekvämt inre avstånd */
