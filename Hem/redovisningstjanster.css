@@ -1,29 +1,39 @@
-/********************************** Hem: redovisningstjänster med bild och text **********************************/
+/********************************** Hem: tre tjänster med växlande bild och text **********************************/
 
-/* Sektionen med bild och text under presentationen på Hem-sidan */
-.home-services-intro {
-  padding: clamp(56px, 7vw, 96px) 0;
+/* Hela tjänsteområdet som fortsätter under Hem-sidans introduktion */
+.home-services {
   background: var(--paper);
-  border-bottom: 1px dashed rgba(31, 59, 47, 0.2);
 }
 
-/* Tvåspaltig layout: bild till vänster och text till höger */
-.home-services-intro-inner {
+/* En tjänsterad: bild på ena sidan och text på den andra */
+.home-service-row {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
   align-items: center;
   gap: clamp(36px, 6vw, 88px);
+  padding-top: clamp(48px, 5vw, 72px);
+  padding-bottom: clamp(48px, 5vw, 72px);
+  border-bottom: 1px dashed rgba(31, 59, 47, 0.2);
 }
 
-/* Bildyta i introduktionen — beskärs responsivt utan att tänjas */
-.home-services-intro-image {
+/* Tjänst nummer två: text till vänster och bild till höger */
+.home-service-row-reversed .home-service-image {
+  order: 2;
+}
+
+.home-service-row-reversed .home-service-copy {
+  order: 1;
+}
+
+/* Bildyta i tjänsteraden — responsiv beskärning utan att tänja bilden */
+.home-service-image {
   min-width: 0;
   aspect-ratio: 1.12 / 1;
   overflow: hidden;
 }
 
-/* Själva kontorsbilden */
-.home-services-intro-image img {
+/* Själva tjänstebilden */
+.home-service-image img {
   display: block;
   width: 100%;
   height: 100%;
@@ -31,13 +41,13 @@
   object-position: center;
 }
 
-/* Textkolumnen bredvid bilden */
-.home-services-intro-copy {
+/* Textkolumnen bredvid respektive tjänstebild */
+.home-service-copy {
   max-width: 520px;
 }
 
-/* Underrubriken ”Redovisningstjänster anpassade efter ert företag” */
-.home-services-intro h2 {
+/* Rubrik för varje tjänst */
+.home-service-copy h2 {
   margin: 0 0 24px;
   color: var(--ink);
   font-family: Manrope, sans-serif;
@@ -47,8 +57,8 @@
   line-height: 1.2;
 }
 
-/* Brödtexten som beskriver redovisningstjänsterna */
-.home-services-intro p {
+/* Brödtext som förklarar respektive tjänst */
+.home-service-copy p {
   max-width: 480px;
   margin: 0;
   color: var(--muted);
@@ -56,26 +66,29 @@
   line-height: 1.7;
 }
 
-/* Mobil och smal surfplatta — stapla bild och text */
+/* Mobil och smal surfplatta — stapla varje bild över tillhörande text */
 @media (max-width: 760px) {
-  .home-services-intro {
-    padding: 48px 0 56px;
-  }
-
-  .home-services-intro-inner {
+  .home-service-row {
     grid-template-columns: 1fr;
-    gap: 28px;
+    gap: 26px;
+    padding-top: 40px;
+    padding-bottom: 44px;
   }
 
-  .home-services-intro-image {
+  .home-service-row-reversed .home-service-image,
+  .home-service-row-reversed .home-service-copy {
+    order: initial;
+  }
+
+  .home-service-image {
     aspect-ratio: 1.25 / 1;
   }
 
-  .home-services-intro-copy {
+  .home-service-copy {
     max-width: 620px;
   }
 
-  .home-services-intro h2 {
+  .home-service-copy h2 {
     margin-bottom: 16px;
     font-size: clamp(28px, 7vw, 38px);
   }
