@@ -151,10 +151,11 @@
   }
 
   .home-service-content h2 {
-    width: 66%;
+    width: 100%;
     margin-bottom: 14px;
-    font-size: clamp(22px, 6vw, 27px);
+    font-size: clamp(18px, 5.5vw, 27px);
     letter-spacing: -0.35px;
+    overflow-wrap: break-word;
   }
 
   .home-service-image-left .home-service-content h2 {
