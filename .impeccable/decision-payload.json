@@ -1,0 +1,254 @@
+{
+  "title": "Choose the visual world for Ekonomika",
+  "question": "The roll assigned Snickeri & Materialprov (Nordic Workshop & Ledger Sample Board). Keep it, pick an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "kind": "assigned",
+      "label": "Snickeri & Materialprov",
+      "kicker": "THE ROLL",
+      "lineage": "Scandinavian architectural sample boards & trade studio specifications",
+      "thesis": "Tactile Nordic craft meets calibrated accounting: every profession and service mounted like a precision workshop sample board.",
+      "palette": [
+        "#F6F3EC",
+        "#182B22",
+        "#244536",
+        "#B86438",
+        "#E5EBE2"
+      ],
+      "materials": [
+        "birch-pale vellum",
+        "charred spruce ink",
+        "brushed brass specification tags"
+      ],
+      "viewport": "Full-viewport architectural specification board splitting real tradespeople portraits (Byggare, Frisör, Läkare, Advokat) with a live 3-step receipt-to-ledger specimen tray and direct contact action.",
+      "risk": "Can feel overly architectural if human warmth and personal portraits are pushed too small.",
+      "raised": [
+        {
+          "from": "pop-culture-shelf-ligne-claire-album",
+          "raise": "Unvarying structural hairline weight and tier-by-tier reading discipline across every card and frame, with zero muddy drop-shadows."
+        },
+        {
+          "from": "reefs-bioluminescent-nocturnal-chromatophore-skin-language",
+          "raise": "Interactive service tabs and workflow steps shift typographic weight and surface tone cohesively when inspected."
+        },
+        {
+          "from": "operate-c-cracktro-scroller-queue",
+          "raise": "Headlines, step numerals, and marginalia lock to a strict shared baseline grid across planes."
+        },
+        {
+          "from": "signals-instruments-nixie-laboratory-counter",
+          "raise": "Step numbers (01, 02, 03) and K2/K3 competence markers sit in engineered tabular numeral housings."
+        }
+      ],
+      "html": ".impeccable/mocks/decision/assigned.html",
+      "comp": ".impeccable/mocks/decision/assigned.png"
+    },
+    {
+      "id": "model-pick",
+      "kind": "pick",
+      "label": "Årsredovisning Broadsheet",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Swedish financial dailies & linen-bound annual reports (Årsredovisningar)",
+      "thesis": "Turns receipt chaos into the calm, audited authority of a classic Swedish annual report and financial journal.",
+      "palette": [
+        "#F7F4EB",
+        "#15261E",
+        "#2D5643",
+        "#A84B31"
+      ],
+      "materials": [
+        "warm newsprint-ivory",
+        "pine-ink serif typography",
+        "double-rule ledger columns"
+      ],
+      "viewport": "Editorial front-page spread with high-contrast serif masthead, verified trade portraits in ruled columns, and an audited summary ledger of Ekonomika's services.",
+      "risk": "Familiar editorial-financial territory that many premium Nordic advisory firms gravitate toward.",
+      "html": ".impeccable/mocks/decision/model-pick.html",
+      "comp": ".impeccable/mocks/decision/model-pick.png"
+    },
+    {
+      "id": "challenger-provenance",
+      "kind": "challenger",
+      "catalogId": "exhibition-museum-curation-provenance-ribbon",
+      "label": "Verifikationsband (Provenance Ribbon)",
+      "verdict": "competitive",
+      "lineage": "Archival provenance custody ribbons & verification binders",
+      "thesis": "One continuous copper-red verification thread traces a receipt from job-site tablet to finished annual declaration.",
+      "palette": [
+        "#F3EFE6",
+        "#1A2D24",
+        "#B03A2E",
+        "#D8D2C5"
+      ],
+      "materials": [
+        "archival buff paper",
+        "continuous red silk custody line",
+        "dated small-cap verification stamps"
+      ],
+      "viewport": "An archival spread where a single red verification line enters from the top nav, threads through Byggare/Frisör/Läkare/Advokat, and knots into 01 Anslut → 02 Underlag → 03 Granska.",
+      "case": "Dramatizes Ekonomika's receipt-to-ledger chain of custody in one unforgettable visual line; slightly more museum-editorial than everyday SMB trade.",
+      "risk": "The ribbon must stay strictly functional as wayfinding rather than decorative string.",
+      "html": ".impeccable/mocks/decision/challenger-provenance.html",
+      "comp": ".impeccable/mocks/decision/challenger-provenance.png",
+      "hero": "https://impeccable.style/worlds/cards/exhibition-museum-curation-provenance-ribbon-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/exhibition-museum-curation-provenance-ribbon.webp"
+    },
+    {
+      "id": "challenger-neubrutalist",
+      "kind": "challenger",
+      "catalogId": "neubrutalist-award-grade",
+      "label": "Grid-Disciplined Neubrutalism",
+      "verdict": "competitive",
+      "lineage": "Award-grade architectural neubrutalist product sites",
+      "thesis": " Crisp black outlines, warm lime and forest blocks, and tactile hard-shadow buttons that snap down like mechanical keys.",
+      "palette": [
+        "#F7F7F2",
+        "#111A15",
+        "#D9E7C8",
+        "#315D49",
+        "#F2B84B"
+      ],
+      "materials": [
+        "2px true-black structural borders",
+        "unmodulated solid color blocks",
+        "mechanical offset-shadow buttons"
+      ],
+      "viewport": "Locked bento grid with bold grotesk headlines, color-coded trade blocks, and a tactile 3-step workflow strip with snapping CTA buttons.",
+      "case": "Gives maximum scanability and modern fintech punch, though bolder and louder than traditional Swedish accounting firms.",
+      "risk": "Can feel too startup-loud if color blocks overpower the calm reassurance of the copy.",
+      "html": ".impeccable/mocks/decision/challenger-neubrutalist.html",
+      "comp": ".impeccable/mocks/decision/challenger-neubrutalist.png",
+      "hero": "https://impeccable.style/worlds/cards/neubrutalist-award-grade-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/neubrutalist-award-grade.webp"
+    },
+    {
+      "id": "challenger-ligne-claire",
+      "kind": "challenger",
+      "catalogId": "pop-culture-shelf-ligne-claire-album",
+      "label": "Ligne Claire Album",
+      "verdict": "declined",
+      "lineage": "Brussels clear-line illustrated albums",
+      "thesis": "Every accounting step drawn as a flat-color illustrated comic tier.",
+      "palette": [
+        "#F5EFE0",
+        "#141414",
+        "#3A6EA5",
+        "#D94E34"
+      ],
+      "materials": [
+        "even black ink line",
+        "flat unshadowed color fills"
+      ],
+      "viewport": "Four-tier waffle grid of illustrated panels showing a builder and hairdresser handing over receipts.",
+      "case": "Comic-album framing undercuts corporate accounting credibility for K2/K3 business clients.",
+      "risk": "Reads as a storybook rather than a qualified accounting firm.",
+      "kept": "Unvarying structural hairline weight and tier-by-tier reading discipline across every frame.",
+      "hero": "https://impeccable.style/worlds/cards/pop-culture-shelf-ligne-claire-album-hero.webp"
+    },
+    {
+      "id": "challenger-chromatophore",
+      "kind": "challenger",
+      "catalogId": "reefs-bioluminescent-nocturnal-chromatophore-skin-language",
+      "label": "Chromatophore Skin",
+      "verdict": "declined",
+      "lineage": "Bioluminescent cephalopod pigment waves",
+      "thesis": "A living surface whose typography and pigment cells expand with activity.",
+      "palette": [
+        "#F2EDE4",
+        "#4A251D",
+        "#1CA388",
+        "#161C1A"
+      ],
+      "materials": [
+        "variable pigment cells",
+        "iridophore accents"
+      ],
+      "viewport": "Cellular shader field pulsing across service categories.",
+      "case": "Biological skin patterns are alien to Swedish bookkeeping and tax advisory.",
+      "risk": "Visual metaphor fights the subject.",
+      "kept": "State-driven typographic weight and surface tone shifts when inspecting active workflow steps.",
+      "hero": "https://impeccable.style/worlds/cards/reefs-bioluminescent-nocturnal-chromatophore-skin-language-hero.webp"
+    },
+    {
+      "id": "challenger-cracktro",
+      "kind": "challenger",
+      "catalogId": "operate-c-cracktro-scroller-queue",
+      "label": "Cracktro Scroller Queue",
+      "verdict": "declined",
+      "lineage": "Late-night demoscene bitmap title screens",
+      "thesis": "Unboxed ivory lines floating at layered depths over an emissive black void.",
+      "palette": [
+        "#050606",
+        "#F4F1EA",
+        "#E59A28",
+        "#5A625E"
+      ],
+      "materials": [
+        "emissive black void",
+        "drifting dust layers"
+      ],
+      "viewport": "Unenclosed baseline text over drifting starfield layers.",
+      "case": "2am demoscene darkness contradicts approachable daytime SME accounting.",
+      "risk": "Alienates non-technical business owners.",
+      "kept": "Shared baseline alignment across headlines, numerals, and marginalia.",
+      "hero": "https://impeccable.style/worlds/cards/operate-c-cracktro-scroller-queue-hero.webp"
+    },
+    {
+      "id": "challenger-nixie",
+      "kind": "challenger",
+      "catalogId": "signals-instruments-nixie-laboratory-counter",
+      "label": "Nixie Laboratory Counter",
+      "verdict": "declined",
+      "lineage": "High-voltage glass Nixie-tube counters",
+      "thesis": "Every financial figure and step glowing orange inside blackened steel tube banks.",
+      "palette": [
+        "#141618",
+        "#FF6A1A",
+        "#8A949A",
+        "#262A2E"
+      ],
+      "materials": [
+        "blackened steel chassis",
+        "orange plasma numerals"
+      ],
+      "viewport": "Bank of glowing glass numeral tubes above engraved steel service switches.",
+      "case": "Cold-war laboratory hardware feels like an oscilloscope rather than personal advisory.",
+      "risk": "Over-mechanizes a human service business.",
+      "kept": "Engineered tabular numeral housings for step numbers (01–03) and K2/K3 competence markers.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-nixie-laboratory-counter-hero.webp"
+    }
+  ],
+  "reroll": {
+    "registers": [
+      "safer",
+      "bolder"
+    ]
+  },
+  "buildPath": {
+    "value": "code",
+    "toggle": true
+  },
+  "canon": true,
+  "canonCard": {
+    "kind": "canon",
+    "label": "Nordic Fintech & Advisory Standard",
+    "thesis": "The clean, high-trust Scandinavian accounting site visitors expect, executed at peak polish.",
+    "palette": [
+      "#F7F7F2",
+      "#1D392C",
+      "#315D49",
+      "#D9E7C8"
+    ],
+    "materials": [
+      "soft sage cards",
+      "editorial portraits",
+      "clean typographic hierarchy"
+    ],
+    "viewport": "Split hero with headline, CTA, and portrait alongside a 4-pillar trust bar and structured service cards.",
+    "risk": "Refines the familiar category aesthetic rather than breaking out of it.",
+    "html": ".impeccable/mocks/decision/canon.html",
+    "comp": ".impeccable/mocks/decision/canon.png"
+  },
+  "steer": true
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 1440px; height: 900px; overflow: hidden;
+    background: #F7F7F2; color: #111A15;
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 28px; display: grid; grid-template-rows: 76px 1fr 84px; gap: 20px;
+  }
+  header {
+    background: #FFFFFF; border: 3px solid #111A15; box-shadow: 6px 6px 0 #111A15;
+    display: flex; justify-content: space-between; align-items: center; padding: 0 28px;
+  }
+  .logo { font-size: 28px; font-weight: 700; }
+  .nav { display: flex; gap: 24px; align-items: center; font-weight: 700; }
+  .btn-snap {
+    background: #F2B84B; border: 3px solid #111A15; box-shadow: 4px 4px 0 #111A15;
+    padding: 10px 22px; font-weight: 700;
+  }
+  main { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 20px; }
+  .hero-box {
+    background: #D9E7C8; border: 3px solid #111A15; box-shadow: 8px 8px 0 #111A15;
+    padding: 48px; display: flex; flex-direction: column; justify-content: space-between;
+  }
+  h1 { font-size: 64px; line-height: 1.0; font-weight: 700; }
+  .sub { font-size: 22px; max-width: 560px; }
+  .cta-large {
+    background: #315D49; color: #FFFFFF; border: 3px solid #111A15; box-shadow: 6px 6px 0 #111A15;
+    padding: 18px 32px; font-size: 20px; align-self: flex-start;
+  }
+  .right-col { display: grid; grid-template-rows: repeat(3, 1fr); gap: 20px; }
+  .card {
+    background: #FFFFFF; border: 3px solid #111A15; box-shadow: 6px 6px 0 #111A15;
+    padding: 24px; display: flex; flex-direction: column; justify-content: center;
+  }
+  .card:nth-child(2) { background: #F2B84B; }
+  .card h2 { font-size: 26px; margin-bottom: 6px; }
+  footer {
+    background: #315D49; color: #FFFFFF; border: 3px solid #111A15; box-shadow: 6px 6px 0 #111A15;
+    display: flex; justify-content: space-around; align-items: center; font-size: 18px; font-weight: 700;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">EKONOMIKA</div>
+    <div class="nav"><span>Hem</span><span>Våra Tjänster</span><span>Om Oss</span><span class="btn-snap">Kontakt ↗</span></div>
+  </header>
+  <main>
+    <div class="hero-box">
+      <span class="btn-snap" style="align-self:flex-start;">DIGITAL REDOVISNINGSBYRÅ</span>
+      <h1>Byggare, Frisör, Läkare eller Advokat.</h1>
+      <p class="sub">Vi på Ekonomika tar hand om din ekonomi så du kan slappna av efter jobbet.</p>
+      <div class="cta-large">Kom igång med digital bokföring →</div>
+    </div>
+    <div class="right-col">
+      <div class="card"><h2>01 — Starta Bolag</h2><p>Vi guidar er genom bolagsstarten från dag ett.</p></div>
+      <div class="card"><h2>02 — Löpande Redovisning</h2><p>Bokföring, moms, lön, bokslut och K2/K3.</p></div>
+      <div class="card"><h2>03 — Privata Deklarationer</h2><p>Trygg deklarationshjälp även för privatpersoner.</p></div>
+    </div>
+  </main>
+  <footer>
+    <span>✓ Digitala Lösningar</span>
+    <span>✓ Kvalificerade Redovisningsekonomer</span>
+    <span>✓ Personlig Kundservice</span>
+    <span>✓ Administration</span>
+  </footer>
+</body>
+</html>

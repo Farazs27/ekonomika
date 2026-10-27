@@ -1,0 +1,396 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-27T22:36:00Z",
+  "title": "Design System: Ekonomika",
+  "extensions": {
+    "colorMeta": {
+      "white": {
+        "role": "neutral",
+        "displayName": "Crisp Advisory White",
+        "canonical": "#FFFFFF",
+        "tonalRamp": [
+          "#14241D",
+          "#2C4238",
+          "#4E665B",
+          "#778E83",
+          "#A3B5AC",
+          "#CBD8D1",
+          "#E8F0EC",
+          "#FFFFFF"
+        ]
+      },
+      "surface-alt": {
+        "role": "neutral",
+        "displayName": "Nordic Sage-Mist Surface",
+        "canonical": "#F4F7F5",
+        "tonalRamp": [
+          "#14241D",
+          "#293F35",
+          "#496156",
+          "#70887D",
+          "#9CB0A6",
+          "#C4D3CB",
+          "#E2EAE5",
+          "#F4F7F5"
+        ]
+      },
+      "sage-soft": {
+        "role": "secondary",
+        "displayName": "Soft Nordic Sage Tint",
+        "canonical": "#E8F0EC",
+        "tonalRamp": [
+          "#14241D",
+          "#284237",
+          "#456457",
+          "#6B8B7D",
+          "#95B2A5",
+          "#BFD4CA",
+          "#D6E5DD",
+          "#E8F0EC"
+        ]
+      },
+      "forest-dark": {
+        "role": "primary",
+        "displayName": "Executive Forest Dark",
+        "canonical": "#183328",
+        "tonalRamp": [
+          "#0C1A14",
+          "#183328",
+          "#244536",
+          "#2E5946",
+          "#487A64",
+          "#76A18D",
+          "#B3CEC1",
+          "#E8F0EC"
+        ]
+      },
+      "forest": {
+        "role": "primary",
+        "displayName": "Corporate Pine Forest",
+        "canonical": "#244536",
+        "tonalRamp": [
+          "#0E1D16",
+          "#183328",
+          "#244536",
+          "#2E5946",
+          "#4B7D66",
+          "#79A490",
+          "#B6D1C4",
+          "#EAF2EE"
+        ]
+      },
+      "forest-hover": {
+        "role": "primary",
+        "displayName": "Forest Hover Spruce",
+        "canonical": "#2E5946",
+        "tonalRamp": [
+          "#102119",
+          "#1D3A2D",
+          "#2E5946",
+          "#3F755D",
+          "#5B937A",
+          "#86B49F",
+          "#BBD7CA",
+          "#ECF5F0"
+        ]
+      },
+      "sage-accent": {
+        "role": "secondary",
+        "displayName": "Luminous Sage Accent",
+        "canonical": "#D9E7C8",
+        "tonalRamp": [
+          "#1E2914",
+          "#364825",
+          "#526B3A",
+          "#739155",
+          "#97B47A",
+          "#BBD1A3",
+          "#D9E7C8",
+          "#F2F7EC"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Slate-Forest Ink",
+        "canonical": "#14241D",
+        "tonalRamp": [
+          "#0A120E",
+          "#14241D",
+          "#22352C",
+          "#384E44",
+          "#587065",
+          "#869B91",
+          "#C2D0C9",
+          "#F0F4F2"
+        ]
+      },
+      "ink-secondary": {
+        "role": "neutral",
+        "displayName": "Secondary Pine Ink",
+        "canonical": "#22352C",
+        "tonalRamp": [
+          "#0E1713",
+          "#182620",
+          "#22352C",
+          "#3A5247",
+          "#5B7468",
+          "#889E93",
+          "#C1D0C8",
+          "#EFF4F1"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Sage Slate",
+        "canonical": "#43564D",
+        "tonalRamp": [
+          "#141C18",
+          "#28352F",
+          "#43564D",
+          "#5D7368",
+          "#7E9389",
+          "#A5B6AE",
+          "#CFD9D4",
+          "#F2F5F3"
+        ]
+      },
+      "muted-light": {
+        "role": "neutral",
+        "displayName": "Muted Light Slate",
+        "canonical": "#687B72",
+        "tonalRamp": [
+          "#19201D",
+          "#303C36",
+          "#4B5B53",
+          "#687B72",
+          "#899B92",
+          "#B0BEB7",
+          "#D5DFDA",
+          "#F3F6F4"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Hairline Sage Border",
+        "canonical": "#E2EAE5",
+        "tonalRamp": [
+          "#14241D",
+          "#2C4138",
+          "#4C645A",
+          "#748C81",
+          "#A0B3AA",
+          "#C6D4CD",
+          "#E2EAE5",
+          "#F4F7F5"
+        ]
+      },
+      "border-strong": {
+        "role": "neutral",
+        "displayName": "Strong Sage Border",
+        "canonical": "#CBD8D1",
+        "tonalRamp": [
+          "#14241D",
+          "#2B4037",
+          "#4A6157",
+          "#70887E",
+          "#9CAFAA",
+          "#CBD8D1",
+          "#E2EAE5",
+          "#F4F7F5"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display (Public Sans 700)",
+        "purpose": "Hero h1 headline on Hem/index.html."
+      },
+      "page-display": {
+        "displayName": "Page Display (Public Sans 700)",
+        "purpose": "Interior page h1 headlines across Våra Tjänster and Om Oss."
+      },
+      "section-display": {
+        "displayName": "Section Display (Public Sans 700)",
+        "purpose": "Primary section and Contact page h1/h2 display headings."
+      },
+      "headline": {
+        "displayName": "Headline (Public Sans 700)",
+        "purpose": "Section-level h2 headings across editorial presentation bands, service introductions, and workflow headers."
+      },
+      "card-headline": {
+        "displayName": "Card Headline (Public Sans 700)",
+        "purpose": "Contact form card h2 heading."
+      },
+      "row-title": {
+        "displayName": "Row Title (Public Sans 650)",
+        "purpose": "Alternating advisory service row h3 headings."
+      },
+      "title": {
+        "displayName": "Title (Public Sans 700)",
+        "purpose": "Service pillar h2 titles."
+      },
+      "step-title": {
+        "displayName": "Step Title (Public Sans 650)",
+        "purpose": "Executive workflow step h3 headings."
+      },
+      "lead": {
+        "displayName": "Lead (Public Sans 500)",
+        "purpose": "Hero, intro, services, and about lead paragraphs."
+      },
+      "lead-compact": {
+        "displayName": "Compact Lead (Public Sans 400)",
+        "purpose": "Contact page lead paragraph."
+      },
+      "subhead": {
+        "displayName": "Subhead (Public Sans 400–700)",
+        "purpose": "Advisory header lead copy and about highlight sub-headings."
+      },
+      "body": {
+        "displayName": "Body (Public Sans 400)",
+        "purpose": "Calm Swedish corporate narrative prose constrained to 54ch–65ch."
+      },
+      "body-sm": {
+        "displayName": "Body Small (Public Sans 400)",
+        "purpose": "Footer copy, card subcopy, checklist items, and highlight descriptions."
+      },
+      "button": {
+        "displayName": "Button & Nav Link (Public Sans 500–600)",
+        "purpose": "Primary/secondary buttons and top navigation links (15px)."
+      },
+      "label": {
+        "displayName": "Label (Public Sans 600)",
+        "purpose": "Form input labels, benefit strip titles, and inline advisory text links."
+      }
+    },
+    "shadows": [
+      {
+        "name": "shadow-card",
+        "value": "0 12px 32px -12px rgba(20, 36, 29, 0.08)",
+        "purpose": "Soft corporate elevation shadow for white service pillar cards, the contact form card, and daylight editorial photography."
+      },
+      {
+        "name": "shadow-elevated",
+        "value": "0 20px 44px -16px rgba(20, 36, 29, 0.14)",
+        "purpose": "Deeper ambient elevation for featured office photography (.about-media) and the mobile navigation drawer."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Smooth corporate easing for 0.18s–0.2s color shifts, -1px button lifts, and arrow icon translations."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "md",
+        "value": "760px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary corporate CTA button in Corporate Pine Forest (#244536) with 6px radius and Executive Forest Dark (#183328) hover shift.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#kontakt\">Boka en genomgång</a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 26px; border-radius: var(--radius-sm, 6px); background: var(--forest, #244536); color: var(--white, #FFFFFF); border: 1px solid var(--forest, #244536); font-family: var(--font-sans, 'Public Sans', sans-serif); font-size: 15px; font-weight: 600; text-decoration: none; cursor: pointer; transition: background-color 0.2s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.2s cubic-bezier(0.22, 1, 0.36, 1), transform 0.2s cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-primary:hover { background: var(--forest-dark, #183328); border-color: var(--forest-dark, #183328); transform: translateY(-1px); } .ds-btn-primary:focus-visible { outline: 2px solid var(--forest, #244536); outline-offset: 3px; }"
+    },
+    {
+      "name": "Light Hero & Nav CTA Button",
+      "kind": "button",
+      "refersTo": "button-light",
+      "description": "High-contrast Luminous Sage Accent (#D9E7C8) button used on dark #183328 executive forest bands.",
+      "html": "<div class=\"ds-dark-Demo\"><a class=\"ds-btn-light\" href=\"#kontakt\">Kontakta oss</a><a class=\"ds-btn-outline-light\" href=\"#tjanster\">Våra tjänster</a></div>",
+      "css": ".ds-dark-Demo { display: inline-flex; flex-wrap: wrap; gap: 14px; padding: 20px 24px; background: var(--forest-dark, #183328); border-radius: var(--radius-md, 10px); } .ds-btn-light, .ds-btn-outline-light { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 26px; border-radius: var(--radius-sm, 6px); font-family: var(--font-sans, 'Public Sans', sans-serif); font-size: 15px; font-weight: 600; text-decoration: none; cursor: pointer; transition: background-color 0.2s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.2s cubic-bezier(0.22, 1, 0.36, 1), transform 0.2s cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-light { background: var(--sage-accent, #D9E7C8); color: var(--forest-dark, #183328); border: 1px solid var(--sage-accent, #D9E7C8); } .ds-btn-light:hover, .ds-btn-light:focus-visible { background: var(--white, #FFFFFF); border-color: var(--white, #FFFFFF); color: var(--forest-dark, #183328); transform: translateY(-1px); } .ds-btn-outline-light { background: transparent; color: var(--white, #FFFFFF); border: 1px solid rgba(255, 255, 255, 0.32); } .ds-btn-outline-light:hover, .ds-btn-outline-light:focus-visible { background: rgba(255, 255, 255, 0.08); border-color: var(--white, #FFFFFF); color: var(--white, #FFFFFF); transform: translateY(-1px); }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Clean white secondary button with strong sage border (#CBD8D1) and sage-mist hover surface.",
+      "html": "<a class=\"ds-btn-secondary\" href=\"#om\">Läs mer om oss</a>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 26px; border-radius: var(--radius-sm, 6px); background: var(--white, #FFFFFF); color: var(--ink, #14241D); border: 1px solid var(--border-strong, #CBD8D1); font-family: var(--font-sans, 'Public Sans', sans-serif); font-size: 15px; font-weight: 600; text-decoration: none; cursor: pointer; transition: background-color 0.2s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.2s cubic-bezier(0.22, 1, 0.36, 1), transform 0.2s cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-secondary:hover { background: var(--surface-alt, #F4F7F5); border-color: var(--forest, #244536); transform: translateY(-1px); } .ds-btn-secondary:focus-visible { outline: 2px solid var(--forest, #244536); outline-offset: 3px; }"
+    },
+    {
+      "name": "Corporate Form Input",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Corporate form field with 600-weight Public Sans label, 6px radius, #CBD8D1 stroke, and soft #244536 focus ring.",
+      "html": "<div class=\"ds-form-group\"><label class=\"ds-form-label\" for=\"ds-email\">E-postadress *</label><input class=\"ds-form-input\" id=\"ds-email\" type=\"email\" placeholder=\"namn@foretag.se\"></div>",
+      "css": ".ds-form-group { display: flex; flex-direction: column; gap: 7px; max-width: 400px; font-family: var(--font-sans, 'Public Sans', sans-serif); } .ds-form-label { font-size: 0.875rem; font-weight: 600; color: var(--ink-secondary, #22352C); } .ds-form-input { width: 100%; font-family: var(--font-sans, 'Public Sans', sans-serif); font-size: 0.96875rem; color: var(--ink, #14241D); background: var(--white, #FFFFFF); border: 1px solid var(--border-strong, #CBD8D1); border-radius: var(--radius-sm, 6px); padding: 12px 14px; transition: border-color 0.18s ease, box-shadow 0.18s ease; } .ds-form-input::placeholder { color: var(--muted-light, #687B72); } .ds-form-input:focus { outline: none; border-color: var(--forest, #244536); box-shadow: 0 0 0 3px rgba(36, 69, 54, 0.12); }"
+    },
+    {
+      "name": "Executive Header Navigation",
+      "kind": "nav",
+      "refersTo": "button-nav-cta",
+      "description": "Sticky #183328 corporate navigation bar with #D9E7C8 active underline and Kontakta oss CTA button.",
+      "html": "<header class=\"ds-site-header\"><nav class=\"ds-nav\" aria-label=\"Huvudmeny\"><span class=\"ds-brand\">EKONOMIKA</span><ul class=\"ds-nav-links\"><li><a href=\"#hem\" aria-current=\"page\">Hem</a></li><li><a href=\"#tjanster\">Våra Tjänster</a></li><li><a href=\"#om\">Om Oss</a></li><li><a class=\"ds-nav-cta\" href=\"#kontakt\">Kontakta oss</a></li></ul></nav></header>",
+      "css": ".ds-site-header { background: var(--forest-dark, #183328); border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding: 0 24px; font-family: var(--font-sans, 'Public Sans', sans-serif); } .ds-nav { height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 24px; } .ds-brand { font-size: 1.25rem; font-weight: 700; letter-spacing: 0.03em; color: var(--white, #FFFFFF); } .ds-nav-links { display: flex; align-items: center; gap: 32px; list-style: none; margin: 0; padding: 0; font-size: 15px; font-weight: 500; } .ds-nav-links a:not(.ds-nav-cta) { color: rgba(255, 255, 255, 0.84); padding: 6px 0; border-bottom: 2px solid transparent; text-decoration: none; transition: color 0.2s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.2s cubic-bezier(0.22, 1, 0.36, 1); } .ds-nav-links a:not(.ds-nav-cta):hover, .ds-nav-links a:not(.ds-nav-cta):focus-visible { color: var(--white, #FFFFFF); } .ds-nav-links a[aria-current=\"page\"]:not(.ds-nav-cta) { color: var(--white, #FFFFFF); font-weight: 600; border-bottom-color: var(--sage-accent, #D9E7C8); } .ds-nav-cta { display: inline-flex; align-items: center; justify-content: center; padding: 11px 22px; border-radius: var(--radius-sm, 6px); background: var(--sage-accent, #D9E7C8); color: var(--forest-dark, #183328); font-weight: 600; text-decoration: none; transition: background-color 0.2s cubic-bezier(0.22, 1, 0.36, 1), transform 0.2s cubic-bezier(0.22, 1, 0.36, 1); } .ds-nav-cta:hover, .ds-nav-cta:focus-visible { background: var(--white, #FFFFFF); color: var(--forest-dark, #183328); transform: translateY(-1px); }"
+    },
+    {
+      "name": "Service Pillar Card",
+      "kind": "card",
+      "refersTo": "service-pillar-card",
+      "description": "Elevated 10px-radius corporate service card with hairline header divider and forest-green checkmark list.",
+      "html": "<article class=\"ds-service-pillar\"><div class=\"ds-pillar-head\"><h2>Ekonomi</h2><p>Löpande redovisning, bokslut och skattehantering enligt gällande regelverk.</p></div><ul class=\"ds-checklist\"><li><svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><polyline points=\"4 10.5 8 14.5 16 6.5\"></polyline></svg><span>Löpande bokföring och avstämningar</span></li><li><svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><polyline points=\"4 10.5 8 14.5 16 6.5\"></polyline></svg><span>Årsbokslut och årsredovisning enligt K2 och K3</span></li></ul></article>",
+      "css": ".ds-service-pillar { background: var(--white, #FFFFFF); border: 1px solid var(--border, #E2EAE5); border-radius: var(--radius-md, 10px); padding: 36px 32px; box-shadow: 0 12px 32px -12px rgba(20, 36, 29, 0.08); max-width: 380px; font-family: var(--font-sans, 'Public Sans', sans-serif); } .ds-pillar-head { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid var(--border, #E2EAE5); } .ds-pillar-head h2 { margin: 0 0 10px; font-size: 1.375rem; font-weight: 700; letter-spacing: -0.015em; color: var(--forest-dark, #183328); } .ds-pillar-head p { margin: 0; font-size: 0.96875rem; line-height: 1.55; color: var(--muted, #43564D); } .ds-checklist { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; } .ds-checklist li { display: flex; align-items: flex-start; gap: 12px; font-size: 0.96875rem; line-height: 1.5; color: var(--ink-secondary, #22352C); } .ds-checklist svg { width: 18px; height: 18px; color: var(--forest, #244536); flex-shrink: 0; margin-top: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Nordic Executive Accounting & Advisory",
+    "overview": "Ekonomika presents itself with the calm, institutional credibility of a modern Swedish corporate accounting and advisory firm—benchmarked against Aspia, Ludvig & Co, and Grant Thornton Sverige. Built for Swedish business owners across trades and professions (builders, hairdressers, medical clinicians, lawyers, and founders) as well as private declaration clients, the visual system replaces boxed brutalist grids, monospace badges, and terracotta template chrome with generous white space, deep executive forest-green authority, and straightforward service clarity.\n\nThe system alternates a crisp white primary canvas (--white) with soft Nordic sage-mist section bands (--surface-alt) and full-bleed executive forest-dark bands (--forest-dark) for the header, hero, digital workflow section, and footer. A unified corporate sans-serif family (Public Sans) handles every typographic role from 700-weight display headlines down to 400-weight Swedish prose and 600-weight form labels, keeping the reading experience calm, direct, and unhurried.",
+    "keyCharacteristics": [
+      "Alternating Executive Bands: Full-bleed deep executive forest (--forest-dark) hero and workflow bands alternate with crisp white (--white) and soft Nordic sage-mist (--surface-alt) editorial sections.",
+      "Single-Family Corporate Sans: Public Sans across all display, headline, title, body, and label roles (tabular-nums enabled globally on body) with zero decorative kickers, eyebrows, or monospace badge housings.",
+      "Restrained Hairline Separation: Subtle 1px solid hairline dividers (--border on light surfaces, rgba(255, 255, 255, 0.08) to 0.14 on dark forest surfaces) separate section bands, editorial service rows, and card headers without boxing content into rigid cells.",
+      "Measured Corner Geometry: Restrained 6px radii (--radius-sm) for buttons, form inputs, and social icon buttons paired with 10px radii (--radius-md) for editorial photography frames, service pillar cards, and the contact form card.",
+      "Natural Stockholm Advisory Photography: Real and bespoke natural-light Nordic office photography (aspect-ratio: 4 / 3 and 16 / 10) grounded by soft ambient elevation shadows."
+    ],
+    "rules": [
+      {
+        "name": "The Alternating Band Rule",
+        "body": "Page rhythm comes from full-bleed horizontal surface transitions between Executive Forest Dark (#183328), Crisp Advisory White (#FFFFFF), and Nordic Sage-Mist (#F4F7F5). Never place heavy outer box borders around entire page sections.",
+        "section": "colors"
+      },
+      {
+        "name": "The Sage-On-Forest Contrast Rule",
+        "body": "Luminous Sage Accent (#D9E7C8) with #183328 text is reserved exclusively for primary triggers and highlights sitting on #183328 dark forest bands (.nav-cta, .btn-light, .workflow-step h3, active nav underline). On light #FFFFFF or #F4F7F5 surfaces, primary actions always use solid Corporate Pine Forest (#244536) with #FFFFFF text.",
+        "section": "colors"
+      },
+      {
+        "name": "The Direct Heading Rule",
+        "body": "Every h1, h2, and h3 opens directly at its natural typographic scale without uppercase kickers, category eyebrows, or boxed numeral prefixes.",
+        "section": "typography"
+      },
+      {
+        "name": "The Single-Voice Sans Rule",
+        "body": "All headings, body copy, navigation links, buttons, and form controls use Public Sans (--font-sans). Never introduce decorative display serifs or monospace badge fonts.",
+        "section": "typography"
+      },
+      {
+        "name": "The Restrained Lift Rule",
+        "body": "Interactive buttons and social links never cast heavy drop shadows; on :hover and :focus-visible, they respond with a subtle -1px to -2px vertical lift (transform: translateY(-1px)) and crisp color transitions over 0.2s cubic-bezier(0.22, 1, 0.36, 1).",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do alternate section backgrounds cleanly between #183328 (--forest-dark), #FFFFFF (--white), and #F4F7F5 (--surface-alt), using 1px solid #E2EAE5 (--border) only for subtle horizontal section or row separation.",
+      "Do set all typography in Public Sans (--font-sans) with 700 weight for h1/h2 headings (-0.02em to -0.025em tracking) and 400–500 weight for Swedish body prose (54ch–65ch).",
+      "Do use --radius-sm (6px) on buttons and form inputs and --radius-md (10px) on cards and photography frames, paired with --shadow-card or --shadow-elevated.",
+      "Do use #D9E7C8 (--sage-accent) with #183328 text for primary CTAs and active indicators on dark #183328 bands, and solid #244536 (--forest) with #FFFFFF text for primary CTAs on light surfaces.",
+      "Do use round-capped (stroke-linecap=\"round\", stroke-linejoin=\"round\") SVG checkmarks and directional arrows across lists, trust strips, and text links."
+    ],
+    "donts": [
+      "Don't introduce heavy 1.5px brutalist outer grids, 0px sharp-cornered plates, or exposed cell borders around content sections.",
+      "Don't use terracotta, brass, or orange accent colors (#B86438), display serifs (Bricolage Grotesque), or boxed monospace numeral badges (Azeret Mono).",
+      "Don't place uppercase kickers, category eyebrows, or pill tags above h1, h2, or h3 headings.",
+      "Don't fabricate customer testimonials, client logo walls, or numeric pricing tiers."
+    ]
+  }
+}

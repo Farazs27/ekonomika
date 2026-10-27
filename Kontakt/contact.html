@@ -1,54 +1,83 @@
-<!------------------------------------- Kontakt: mörkgrön introduktion och e-postknapp ------------------------------------->
-<section class="contact" id="kontakt" aria-labelledby="contact-title">
-  <div class="contact-inner wrap">
-    <div class="contact-intro-copy">
-      <h1 id="contact-title">Kontakta oss</h1>
-      <p>Behöver du hjälp med bokföring, bokslut, löner eller deklaration? Hör av dig och berätta vad ditt företag behöver.</p>
-    </div>
-    <a class="button contact-email-button" href="mailto:ekonomikakontakt@gmail.com?subject=Kontakt%20med%20Ekonomika">
-      Skicka e-post till oss
-      <span class="contact-email-arrow" aria-hidden="true">↗</span>
-    </a>
-  </div>
-</section>
+<section class="contact-section" aria-labelledby="contact-heading">
+  <div class="wrap contact-grid">
+    <div class="contact-info">
+      <h1 id="contact-heading">Kontakta oss för ett kostnadsfritt samtal</h1>
+      <p class="contact-lead">
+        Vill ni veta mer om hur vi kan hjälpa ert företag med löpande bokföring, bokslut eller rådgivning? Hör av er via formuläret, telefon eller e-post så återkommer vi snabbt.
+      </p>
 
-<!------------------------------------- Kontakt: kontaktuppgifter och meddelandeformulär ------------------------------------->
-<section class="contact-form-section" aria-label="Kontaktuppgifter och kontaktformulär">
-  <div class="contact-form-inner wrap">
-    <div class="contact-details">
-      <h2>Våra Uppgifter</h2>
+      <div class="contact-details">
+        <div class="contact-detail-item">
+          <h2>Telefon</h2>
+          <p><a href="tel:+4699999">+4699999</a></p>
+          <span class="contact-meta">Stockholm · Helgfria vardagar</span>
+        </div>
 
-      <div class="contact-detail-group">
-        <h3>Adress</h3>
-        <p>Stockholm</p>
-      </div>
+        <div class="contact-detail-item">
+          <h2>E-post</h2>
+          <p><a href="mailto:ekonomikakontakt@gmail.com">ekonomikakontakt@gmail.com</a></p>
+          <span class="contact-meta">Vi svarar normalt inom en arbetsdag</span>
+        </div>
 
-      <div class="contact-detail-group">
-        <h3>E-post</h3>
-        <p><a href="mailto:ekonomikakontakt@gmail.com">ekonomikakontakt@gmail.com</a></p>
-      </div>
-
-      <div class="contact-detail-group">
-        <h3>Telefon</h3>
-        <p><a href="tel:+4699999">+4699999</a></p>
+        <div class="contact-detail-item">
+          <h2>Vad händer härnäst?</h2>
+          <p>
+            Vi börjar alltid med en kostnadsfri genomgång av er nuvarande situation och era behov, och lämnar därefter ett tydligt upplägg.
+          </p>
+        </div>
       </div>
     </div>
 
-    <form class="contact-form" id="contact-form" action="https://formsubmit.co/ekonomikakontakt@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="Nytt kontaktmeddelande från Ekonomikas webbplats">
-      <input type="hidden" name="_next" value="">
-      <div class="contact-form-field">
-        <label for="contact-email">Din e-postadress:</label>
-        <input id="contact-email" name="email" type="email" placeholder="namn@exempel.com" autocomplete="email" required>
-      </div>
+    <div class="contact-card">
+      <h2>Skicka ett meddelande</h2>
+      <p class="contact-card-sub">Fyll i era uppgifter nedan så kontaktar en av våra redovisningsekonomer er.</p>
 
-      <div class="contact-form-field">
-        <label for="contact-message">Meddelande</label>
-        <textarea id="contact-message" name="message" placeholder="Vad behöver du hjälp med?" required></textarea>
-      </div>
+      <form
+        id="contact-form"
+        class="contact-form"
+        action="https://formsubmit.co/ekonomikakontakt@gmail.com"
+        method="POST"
+      >
+        <input type="hidden" name="_subject" value="Ny kontaktförfrågan via Ekonomika.se" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="" />
 
-      <button class="contact-submit-button" type="submit">Skicka in</button>
-      <p class="contact-form-note" id="contact-form-note" aria-live="polite">Ditt meddelande skickas till Ekonomika. Vi läser och svarar personligen.</p>
-    </form>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Namn *</label>
+            <input type="text" id="name" name="name" required autocomplete="name" placeholder="För- och efternamn" />
+          </div>
+          <div class="form-group">
+            <label for="company">Företag</label>
+            <input type="text" id="company" name="company" autocomplete="organization" placeholder="Företagsnamn (valfritt)" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">E-postadress *</label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="namn@foretag.se" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefonnummer</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="070-000 00 00" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Hur kan vi hjälpa er? *</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            placeholder="Berätta kort om er verksamhet eller vad ni önskar hjälp med..."
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full">Skicka förfrågan</button>
+        <p id="contact-form-note" class="contact-form-note" aria-live="polite"></p>
+      </form>
+    </div>
   </div>
 </section>

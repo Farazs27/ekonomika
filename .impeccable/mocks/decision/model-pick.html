@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 1440px; height: 900px; overflow: hidden;
+    background: #F7F4EB; color: #15261E;
+    font-family: 'Onest', sans-serif;
+    padding: 32px 48px;
+    display: grid; grid-template-rows: auto 1fr auto;
+  }
+  header {
+    border-top: 3px solid #15261E; border-bottom: 1px solid #15261E;
+    padding: 18px 0; display: flex; justify-content: space-between; align-items: center;
+  }
+  .masthead { font-family: 'Instrument Serif', serif; font-size: 40px; letter-spacing: -0.02em; }
+  .dateline { font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: #2D5643; }
+  nav { display: flex; gap: 28px; font-size: 14px; font-weight: 600; align-items: center; }
+  .cta { background: #A84B31; color: #F7F4EB; padding: 10px 22px; }
+  main {
+    display: grid; grid-template-columns: 7fr 5fr; gap: 40px;
+    padding: 40px 0; border-bottom: 2px solid #15261E;
+  }
+  .editorial-lead {
+    border-right: 1px solid #15261E; padding-right: 40px;
+    display: flex; flex-direction: column; justify-content: space-between;
+  }
+  .kicker { font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; color: #A84B31; font-weight: 700; }
+  h1 {
+    font-family: 'Instrument Serif', serif; font-size: 82px; line-height: 0.96; font-weight: 400;
+    margin: 16px 0;
+  }
+  .deck { font-size: 22px; line-height: 1.5; color: #2D5643; max-width: 620px; }
+  .cta-row { display: flex; gap: 24px; align-items: center; padding-top: 24px; border-top: 1px solid #15261E; }
+  .btn-main { background: #15261E; color: #F7F4EB; padding: 18px 34px; font-weight: 600; font-size: 16px; }
+  .ledger-column { display: flex; flex-direction: column; gap: 20px; }
+  .ledger-table { border: 1px solid #15261E; background: #EFECE1; padding: 24px; }
+  .ledger-row { display: flex; justify-content: space-between; padding: 14px 0; border-bottom: 1px solid rgba(21,38,30,0.2); }
+  .ledger-row:last-child { border-bottom: none; }
+  .row-title { font-family: 'Instrument Serif', serif; font-size: 26px; }
+  footer { padding-top: 20px; display: flex; justify-content: space-between; font-size: 15px; font-weight: 600; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="dateline">ÅRSREDOVISNING & DIGITAL BOKFÖRING · STOCKHOLM</div>
+    <div class="masthead">EKONOMIKA</div>
+    <nav><span>Hem</span><span>Våra Tjänster</span><span>Om Oss</span><span class="cta">Kontakt ↗</span></nav>
+  </header>
+  <main>
+    <div class="editorial-lead">
+      <div class="kicker">BYGGARE · FRISÖR · LÄKARE · ADVOKAT</div>
+      <h1>Vi tar hand om din ekonomi så du kan <em>slappna av</em> efter jobbet.</h1>
+      <p class="deck">Hos oss får ni hjälp av erfarna redovisningsekonomer med bred kunskap inom bokföring, K2/K3 och ekonomisk rådgivning.</p>
+      <div class="cta-row">
+        <span class="btn-main">Boka genomgång med redovisningsekonom →</span>
+        <span>01 Anslut · 02 Underlag · 03 Granska</span>
+      </div>
+    </div>
+    <div class="ledger-column">
+      <div class="ledger-table">
+        <div class="kicker" style="margin-bottom:12px;">REDOVISNINGSSPECIFIKATION</div>
+        <div class="ledger-row"><span class="row-title">Stöd när ni startar bolag</span><span>BOLAGSSTART</span></div>
+        <div class="ledger-row"><span class="row-title">Löpande redovisning & bokslut</span><span>K2 & K3</span></div>
+        <div class="ledger-row"><span class="row-title">Privata deklarationer</span><span>INKOMST</span></div>
+        <div class="ledger-row"><span class="row-title">Automatiserad kvittoinkorg</span><span>DIGITALT FLÖDE</span></div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <span>✓ Digitala Lösningar</span>
+    <span>✓ Kvalificerade Redovisningsekonomer</span>
+    <span>✓ Personlig Kundservice</span>
+    <span>✓ Administration</span>
+  </footer>
+</body>
+</html>

@@ -1,37 +1,49 @@
-    
-    
-    
-    
-    /* Mini text under header */
+/* ==========================================================
+   BENEFITS TRUST BAR
+   ========================================================== */
 
+.benefits-bar {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 28px 0;
+}
 
+.benefits-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  align-items: center;
+}
 
-    /* Mini texten under headern bakgrundsrad — raden under välkomstheadern */
-    .strip {
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-      background: #fff;
-    }
-    /*  Mini texten under headern  — innehållsbredd, avstånd och textfärg */
-    .strip-inner {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      padding: 19px 0;
-      color: #56675d;
-      font-size: 12px;
-    }
-    /* Enskild fMini texten under headern — placering av bock och text */
-    .strip-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    /* Bock-symbolerna före Mini texten under headerns texterna */
-    .check {
-      color: var(--green);
-      font-weight: 700;
-    }
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 
+.benefit-check {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--sage-soft);
+  color: var(--forest-dark);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
 
+.benefit-check svg {
+  width: 15px;
+  height: 15px;
+}
 
+.benefit-label {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.35;
+}

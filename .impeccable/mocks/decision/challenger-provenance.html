@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 1440px; height: 900px; overflow: hidden;
+    background: #F3EFE6; color: #1A2D24;
+    font-family: 'Work Sans', sans-serif;
+    position: relative; padding: 40px 64px;
+    display: grid; grid-template-rows: auto 1fr auto;
+  }
+  .ribbon-line {
+    position: absolute; left: 112px; top: 0; bottom: 0; width: 4px; background: #B03A2E;
+  }
+  header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-left: 80px; padding-bottom: 24px; border-bottom: 1px solid #D8D2C5;
+  }
+  .brand { font-family: 'Newsreader', serif; font-size: 32px; font-weight: 600; }
+  nav { display: flex; gap: 28px; font-size: 14px; font-weight: 500; align-items: center; }
+  .cta { background: #1A2D24; color: #F3EFE6; padding: 10px 20px; }
+  main {
+    padding-left: 80px; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center;
+  }
+  .fold-stamp {
+    display: inline-block; background: #B03A2E; color: #F3EFE6; font-size: 12px;
+    letter-spacing: 0.1em; padding: 5px 12px; text-transform: uppercase; font-weight: 600;
+  }
+  h1 {
+    font-family: 'Newsreader', serif; font-size: 68px; line-height: 1.04; margin: 20px 0;
+  }
+  .lead { font-size: 19px; line-height: 1.55; max-width: 540px; margin-bottom: 28px; }
+  .btn { background: #B03A2E; color: #F3EFE6; padding: 16px 30px; font-weight: 600; display: inline-block; }
+  .custody-chain {
+    display: flex; flex-direction: column; gap: 18px; border-left: 3px solid #B03A2E; padding-left: 28px;
+  }
+  .custody-node {
+    background: #FAF7F0; border: 1px solid #D8D2C5; padding: 22px;
+  }
+  .node-tag { font-size: 12px; letter-spacing: 0.08em; color: #B03A2E; font-weight: 600; }
+  .node-title { font-family: 'Newsreader', serif; font-size: 26px; margin: 6px 0; }
+  footer {
+    padding-left: 80px; padding-top: 24px; border-top: 1px solid #D8D2C5;
+    display: flex; gap: 40px; font-size: 14px; font-weight: 600;
+  }
+</style>
+</head>
+<body>
+  <div class="ribbon-line"></div>
+  <header>
+    <div class="brand">Ekonomika · Verifikationskedja</div>
+    <nav><span>Hem</span><span>Våra Tjänster</span><span>Om Oss</span><span class="cta">Kontakt ↗</span></nav>
+  </header>
+  <main>
+    <div>
+      <span class="fold-stamp">VERIFIKATIONSBAND · FRÅN KVITTO Till BOKSLUT</span>
+      <h1>Byggare, Frisör, Läkare eller Advokat.</h1>
+      <p class="lead">Vi på Ekonomika tar hand om din ekonomi så du kan slappna av efter jobbet — ett sammanhängande digitalt flöde från första kvittot till färdig deklaration.</p>
+      <span class="btn">Anslut ditt företag →</span>
+    </div>
+    <div class="custody-chain">
+      <div class="custody-node">
+        <div class="node-tag">01 — ANSLUT SYSTEM</div>
+        <div class="node-title">Skräddarsydd koppling till din bokföring</div>
+      </div>
+      <div class="custody-node">
+        <div class="node-tag">02 — UNDERLAG I INKORG</div>
+        <div class="node-title">Kvittokällor, företagskort och brev samlade</div>
+      </div>
+      <div class="custody-node">
+        <div class="node-tag">03 — GRANSKA & DEKLARERA</div>
+        <div class="node-title">Kvalificerade redovisningsekonomer (K2/K3)</div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <span>✓ Digitala Lösningar</span>
+    <span>✓ Kvalificerade Redovisningsekonomer</span>
+    <span>✓ Personlig Kundservice</span>
+    <span>✓ Administration</span>
+  </footer>
+</body>
+</html>

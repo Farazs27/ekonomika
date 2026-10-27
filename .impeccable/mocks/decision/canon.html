@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 1440px; height: 900px; overflow: hidden;
+    background: #F7F7F2; color: #20352D;
+    font-family: 'Manrope', sans-serif;
+    display: grid; grid-template-rows: 84px 1fr 96px;
+  }
+  header {
+    background: #1D392C; color: #FFFFFF; padding: 0 64px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .logo { font-size: 24px; font-weight: 800; }
+  .nav { display: flex; gap: 32px; align-items: center; font-size: 15px; }
+  .pill { background: #315D49; padding: 10px 22px; border-radius: 999px; font-weight: 700; }
+  main {
+    padding: 56px 64px; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center;
+  }
+  h1 { font-size: 58px; line-height: 1.08; font-weight: 800; margin: 16px 0; }
+  p { font-size: 20px; line-height: 1.55; color: #42584E; margin-bottom: 28px; }
+  .btn { background: #244536; color: #FFF; padding: 16px 32px; border-radius: 999px; font-weight: 700; display: inline-block; }
+  .cards { display: grid; gap: 18px; }
+  .card { background: #FFFFFF; border: 1px solid #E5E8DF; border-radius: 20px; padding: 24px; }
+  .card h3 { font-size: 22px; margin-bottom: 6px; }
+  footer {
+    background: #244536; color: #D9E7C8; display: flex; justify-content: space-around; align-items: center; font-weight: 600;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">Ekonomika</div>
+    <div class="nav"><span>Hem</span><span>Våra Tjänster</span><span>Om Oss</span><span class="pill">Kontakt ↗</span></div>
+  </header>
+  <main>
+    <div>
+      <h1>Byggare, Frisör, Läkare eller Advokat</h1>
+      <p>Vi på Ekonomika tar hand om din ekonomi så du kan slappna av efter jobbet.</p>
+      <span class="btn">Kontakta oss</span>
+    </div>
+    <div class="cards">
+      <div class="card"><h3>Stöd när ni startar bolag</h3><p style="font-size:15px;margin:0;">Vi guidar er genom bolagsstarten och hjälper er få en bra grund.</p></div>
+      <div class="card"><h3>Redovisningstjänster anpassade efter ert företag</h3><p style="font-size:15px;margin:0;">Löpande bokföring, bokslut, lön och rådgivning året runt.</p></div>
+      <div class="card"><h3>Hjälp med era privata deklarationer</h3><p style="font-size:15px;margin:0;">Trygg hjälp med deklarationen även för privatpersoner.</p></div>
+    </div>
+  </main>
+  <footer>
+    <span>✓ Digitala Lösningar</span>
+    <span>✓ Kvalificerade Redovisningsekonomer</span>
+    <span>✓ Personlig Kundservice</span>
+    <span>✓ Administration</span>
+  </footer>
+</body>
+</html>
