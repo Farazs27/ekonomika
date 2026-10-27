@@ -344,7 +344,7 @@
   }
 
   .brand img {
-    width: min(180px, calc(100vw - 145px));
+    width: min(150px, calc(100vw - 145px));
   }
 
   .menu-toggle {
