@@ -39,9 +39,9 @@
   overflow: hidden;
 }
 
-/* Första tjänsten: minska bildkolumnen men behåll samma bildform */
-.home-services-top .home-service-compact:first-child {
-  grid-template-columns: minmax(0, 0.68fr) minmax(0, 1fr);
+/* Gör första tjänstebilden mindre utan att ändra dess form */
+.home-services-top .home-service-compact:first-child .home-service-image {
+  width: 85%;
 }
 
 /* Själva tjänstebilderna */
