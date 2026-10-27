@@ -1,4 +1,4 @@
-/********************************** Hem: fri text och bild beskuren som en myntstapel **********************************/
+/********************************** Hem: presentationstext på vågformad grön bakgrund **********************************/
 
 /* Startsidessektionen — text och myntformad bild på sidans vanliga bakgrund */
 .home-intro {
@@ -17,12 +17,11 @@
   content: "";
 }
 
-/* Presentationstext till vänster och en enda beskuren bild till höger */
+/* Introtexten får en egen kolumn i den centrerade innehållsytan */
 .home-intro-inner {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, .82fr);
-  align-items: center;
-  gap: clamp(28px, 6vw, 78px);
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
 }
 
 /* Texten ligger fritt — ingen bubbla, ruta eller färgad bakgrund */
@@ -34,27 +33,10 @@
   line-height: 1.75;
 }
 
-/* Samma kontorsfoto beskuret som en sammanhängande stapel av tre mynt */
-.home-intro-image {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 5 / 6;
-}
-
 /* Mobil och smala fönster — texten visas före myntformen */
 @media (max-width: 680px) {
   .home-intro {
     padding: clamp(110px, 24vw, 150px) 0 clamp(130px, 28vw, 170px);
   }
 
-  .home-intro-inner {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 24px;
-  }
-
-  .home-intro-image {
-    width: min(100%, 420px);
-    justify-self: center;
-  }
 }
