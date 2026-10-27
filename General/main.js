@@ -105,9 +105,27 @@ function alignHomeWaveWithFirstCircle() {
   document.fonts?.ready.then(scheduleAlignment);
 }
 
+/* Kontaktformulär — öppna besökarens e-postapp med ifyllda mottagare och meddelande */
+function activateContactForm() {
+  const form = document.querySelector('#contact-form');
+  if (!form) return;
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const email = form.elements.email.value.trim();
+    const message = form.elements.message.value.trim();
+    const subject = encodeURIComponent('Kontakt med Ekonomika');
+    const body = encodeURIComponent(`E-post från: ${email}\n\nMeddelande:\n${message}`);
+
+    window.location.href = `mailto:ekonomikakontakt@gmail.com?subject=${subject}&body=${body}`;
+  });
+}
+
 loadPageSections()
   .then(() => {
     activateNavigation();
     alignHomeWaveWithFirstCircle();
+    activateContactForm();
   })
   .catch((error) => console.error('Webbplatsens HTML-delar kunde inte läsas in.', error));
