@@ -44,6 +44,11 @@
   width: 85%;
 }
 
+/* Gör första tjänstebilden mindre utan att ändra dess form */
+.home-services-top .home-service-compact:first-child .home-service-image {
+  width: 85%;
+}
+
 /* Själva tjänstebilderna */
 .home-service-image img {
   display: block;
