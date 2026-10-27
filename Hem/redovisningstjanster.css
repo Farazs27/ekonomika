@@ -53,26 +53,20 @@
 
 /* Rubrik och kort ligger ovanpå bildens kant */
 .home-service-content {
-  position: relative;
+  position: absolute;
   z-index: 1;
-  width: 82cqw;
-}
-
-/* Innehållet vänsterställt när bilden ligger till höger */
-.home-service-image-right .home-service-content {
-  margin-left: 8cqw;
-}
-
-/* Innehållet högerställt när bilden ligger till vänster */
-.home-service-image-left .home-service-content {
-  margin-right: 8cqw;
-  margin-left: auto;
+  top: 50%;
+  left: 8cqw;
+  display: flex;
+  flex-direction: column;
+  width: 84cqw;
+  transform: translateY(-50%);
 }
 
 /* Tjänsternas rubrik — placerad separat ovanför den vita textrutan */
 .home-service-content h2 {
-  width: 52%;
-  margin: 0 0 18px;
+  width: 62%;
+  margin: 0 0 14px;
   color: var(--ink);
   font-family: Manrope, sans-serif;
   font-size: clamp(20px, 2.2cqw, 34px);
@@ -92,7 +86,7 @@
 .home-service-card {
   width: 62%;
   min-height: clamp(190px, 18cqw, 260px);
-  margin-left: auto;
+  margin-left: 0;
   display: grid;
   place-items: center;
   padding: clamp(18px, 3cqw, 42px);
@@ -105,8 +99,7 @@
 
 /* På vänsterbildsraden speglas textrutan horisontellt mot högerbildsraderna */
 .home-service-image-left .home-service-card {
-  margin-left: 0;
-  margin-right: auto;
+  margin-left: auto;
 }
 
 /* Brödtexten inne i respektive vita tjänsteruta */
@@ -152,19 +145,12 @@
   }
 
   .home-service-content {
-    width: 100%;
-  }
-
-  .home-service-image-right .home-service-content {
-    margin-left: 0;
-  }
-
-  .home-service-image-left .home-service-content {
-    margin-right: 0;
+    left: 4cqw;
+    width: 92cqw;
   }
 
   .home-service-content h2 {
-    width: 60%;
+    width: 66%;
     margin-bottom: 14px;
     font-size: clamp(22px, 6vw, 27px);
     letter-spacing: -0.35px;
@@ -175,8 +161,7 @@
   }
 
   .home-service-image-left .home-service-card {
-    margin-left: 0;
-    margin-right: auto;
+    margin-left: auto;
   }
 
   .home-service-card {
