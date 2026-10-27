@@ -325,9 +325,10 @@
 
 
     /* Extra smal mobil — gör plats för både logotyp och menyknapp */
+
     @media(max-width:400px) {
       .brand img {
-        width: 250px;
+        width: 150px;
       }
     }
 
