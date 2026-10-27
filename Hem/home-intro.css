@@ -2,8 +2,19 @@
 
 /* Startsidessektionen — text och myntformad bild på sidans vanliga bakgrund */
 .home-intro {
-  padding: clamp(54px, 8vw, 110px) 0;
+  position: relative;
+  isolation: isolate;
+  padding: clamp(130px, 16vw, 210px) 0 clamp(150px, 18vw, 230px);
   background: var(--paper);
+}
+
+/* Grön vågformad bakgrund bakom introtexten och myntbilden */
+.home-intro::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: url("../General/assets/home-intro-shape.svg") center / 100% 100% no-repeat;
+  content: "";
 }
 
 /* Presentationstext till vänster och en enda beskuren bild till höger */
@@ -18,7 +29,7 @@
 .home-intro-copy p {
   max-width: 650px;
   margin: 0;
-  color: var(--ink);
+  color: var(--white);
   font-size: clamp(19px, 2vw, 25px);
   line-height: 1.75;
 }
@@ -34,7 +45,7 @@
 /* Mobil och smala fönster — texten visas före myntformen */
 @media (max-width: 680px) {
   .home-intro {
-    padding: 48px 0;
+    padding: clamp(110px, 24vw, 150px) 0 clamp(130px, 28vw, 170px);
   }
 
   .home-intro-inner {
