@@ -4,7 +4,7 @@
 .home-intro {
   position: relative;
   isolation: isolate;
-  padding: clamp(130px, 16vw, 210px) 0 clamp(150px, 18vw, 230px);
+  padding: clamp(170px, 20vw, 260px) 0 clamp(190px, 22vw, 280px);
   background: var(--paper);
 }
 
@@ -36,7 +36,7 @@
 /* Mobil och smala fönster — texten visas före myntformen */
 @media (max-width: 680px) {
   .home-intro {
-    padding: clamp(110px, 24vw, 150px) 0 clamp(130px, 28vw, 170px);
+    padding: clamp(130px, 28vw, 170px) 0 clamp(150px, 32vw, 190px);
   }
 
 }
