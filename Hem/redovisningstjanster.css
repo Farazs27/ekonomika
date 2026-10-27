@@ -12,7 +12,8 @@
   position: relative;
   display: flex;
   align-items: center;
-  min-height: clamp(560px, 54vw, 760px);
+  container-type: inline-size;
+  min-height: clamp(460px, 56cqw, 780px);
   isolation: isolate;
 }
 
@@ -21,7 +22,7 @@
   position: absolute;
   z-index: 0;
   top: 50%;
-  width: clamp(430px, 56vw, 780px);
+  width: min(56cqw, 780px);
   aspect-ratio: 1;
   overflow: hidden;
   border-radius: 50%;
@@ -40,29 +41,29 @@
 
 /* Tjänst 1 och 3: cirkeln går ut över högerkanten */
 .home-service-image-right .home-service-image {
-  right: -12vw;
+  right: -12cqw;
 }
 
 /* Tjänst 2: cirkeln går ut över vänsterkanten */
 .home-service-image-left .home-service-image {
-  left: -12vw;
+  left: -12cqw;
 }
 
 /* Rubrik och kort ligger ovanpå bildens kant */
 .home-service-content {
   position: relative;
   z-index: 1;
-  width: min(760px, 82vw);
+  width: 82cqw;
 }
 
 /* Innehållet vänsterställt när bilden ligger till höger */
 .home-service-image-right .home-service-content {
-  margin-left: clamp(24px, 8vw, 120px);
+  margin-left: 8cqw;
 }
 
 /* Innehållet högerställt när bilden ligger till vänster */
 .home-service-image-left .home-service-content {
-  margin-right: clamp(24px, 8vw, 120px);
+  margin-right: 8cqw;
   margin-left: auto;
 }
 
@@ -72,7 +73,7 @@
   margin: 0 0 18px;
   color: var(--ink);
   font-family: Manrope, sans-serif;
-  font-size: clamp(25px, 2.2vw, 34px);
+  font-size: clamp(20px, 2.2cqw, 34px);
   font-weight: 600;
   letter-spacing: -0.8px;
   line-height: 1.25;
@@ -88,12 +89,12 @@
 /* Vit textruta — diskret kant, mjuk skugga och bekvämt inre avstånd */
 .home-service-card {
   width: 62%;
-  min-height: 260px;
+  min-height: clamp(190px, 18cqw, 260px);
   margin-left: auto;
   display: grid;
   place-items: center;
-  padding: clamp(24px, 3vw, 42px);
-  border: 7px solid #e5e8df;
+  padding: clamp(18px, 3cqw, 42px);
+  border: clamp(4px, 0.5cqw, 7px) solid #e5e8df;
   border-radius: 14px;
   background: #fff;
   box-shadow: 0 14px 36px rgba(32, 53, 45, 0.14);
@@ -111,27 +112,18 @@
   max-width: 390px;
   margin: 0;
   color: var(--muted);
-  font-size: clamp(17px, 1.45vw, 21px);
+  font-size: clamp(15px, 1.45cqw, 21px);
   line-height: 1.6;
 }
 
 /* Surfplatta: skala ned cirklar och textrutor men behåll deras överlapp */
 @media (max-width: 900px) {
   .home-service-row {
-    min-height: 560px;
-  }
-
-  .home-service-image {
-    width: clamp(390px, 58vw, 560px);
-  }
-
-  .home-service-content {
-    width: 82vw;
+    min-height: max(56cqw, 420px);
   }
 
   .home-service-card {
-    min-height: 230px;
-    width: 60%;
+    min-height: clamp(180px, 18cqw, 230px);
   }
 }
 
@@ -142,19 +134,19 @@
   }
 
   .home-service-row {
-    min-height: 570px;
+    min-height: max(82vw, 470px);
   }
 
   .home-service-image {
-    width: min(108vw, 430px);
+    width: 82vw;
   }
 
   .home-service-image-right .home-service-image {
-    right: -34vw;
+    right: -32vw;
   }
 
   .home-service-image-left .home-service-image {
-    left: -34vw;
+    left: -32vw;
   }
 
   .home-service-content {
@@ -199,22 +191,3 @@
   }
 }
 
-/* Smal mobil: kortare rubriker hålls på den vita ytan intill den beskurna cirkeln */
-@media (max-width: 450px) {
-  .home-service-image {
-    width: min(90vw, 340px);
-  }
-
-  .home-service-image-right .home-service-image {
-    right: -50vw;
-  }
-
-  .home-service-image-left .home-service-image {
-    left: -50vw;
-  }
-
-  .home-service-content h2 {
-    width: 52%;
-    font-size: clamp(18px, 4.8vw, 21px);
-  }
-}
