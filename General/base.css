@@ -133,6 +133,11 @@
       font-weight: 600;
       transition: background-color .2s;
     }
+    /* Pilen i knappen ”Kontakt” — vanlig teckenpil även på mobil */
+    .nav-cta-arrow {
+      font-family: Arial, sans-serif;
+      font-variant-emoji: text;
+    }
     /* Knappen ”Kontakt” — tona bara knappens bakgrund, behåll vit text utan understreck */
     .nav-links .nav-cta:hover,
     .nav-links .nav-cta:focus-visible {
