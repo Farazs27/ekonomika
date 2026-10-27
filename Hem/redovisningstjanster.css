@@ -1,50 +1,35 @@
-/********************************** Hem: tjänster enligt layoutskiss **********************************/
+/********************************** Hem: cirkelbilder och överlappande tjänstekort **********************************/
 
-/* Tjänsteområdet på Hem-sidan */
+/* Tjänsteområdet på Hem-sidan — vit bakgrund och innehåll utanför sidans maxbredd */
 .home-services {
-  padding: clamp(48px, 6vw, 76px) 0;
+  padding: 28px 0 72px;
+  overflow: hidden;
   background: #fff;
 }
 
-/* Övre raden: två tjänster bredvid varandra */
-.home-services-top {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(28px, 4vw, 56px);
+/* Varje tjänst får en egen hög rad med plats för en stor cirkelbild */
+.home-service-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: clamp(560px, 54vw, 760px);
+  isolation: isolate;
 }
 
-/* Varje av de två övre tjänsterna: mindre bild till vänster, kompakt text till höger */
-.home-service-compact {
-  display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1fr);
-  align-items: start;
-  gap: clamp(18px, 2.4vw, 32px);
-  min-width: 0;
-}
-
-/* Bild och text för den tredje tjänsten, förskjutna åt höger enligt skissen */
-.home-service-feature {
-  display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.8fr);
-  align-items: start;
-  gap: clamp(26px, 3.5vw, 48px);
-  width: min(66%, 830px);
-  margin: clamp(72px, 9vw, 132px) 0 0 34%;
-}
-
-/* Bildytorna — mindre storlek, fast proportion och responsiv beskärning */
+/* Stora cirkelbilder — placeras delvis utanför sidkanten */
 .home-service-image {
-  min-width: 0;
-  aspect-ratio: 0.98 / 1;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  width: clamp(430px, 56vw, 780px);
+  aspect-ratio: 1;
   overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 18px 44px rgba(32, 53, 45, 0.16);
+  transform: translateY(-50%);
 }
 
-/* Gör första tjänstebilden mindre utan att ändra dess form */
-.home-services-top .home-service-compact:first-child .home-service-image {
-  width: 85%;
-}
-
-/* Själva tjänstebilderna */
+/* Bildens fyllning och beskärning inuti cirkeln */
 .home-service-image img {
   display: block;
   width: 100%;
@@ -53,95 +38,153 @@
   object-position: center;
 }
 
-/* Textkolumnen intill varje bild */
-.home-service-copy {
-  min-width: 0;
-  padding-top: 34px;
+/* Tjänst 1 och 3: cirkeln går ut över högerkanten */
+.home-service-image-right .home-service-image {
+  right: -12vw;
 }
 
-/* Mindre underrubriker för de tre tjänsterna */
-.home-service-copy h2 {
-  margin: 0 0 30px;
+/* Tjänst 2: cirkeln går ut över vänsterkanten */
+.home-service-image-left .home-service-image {
+  left: -8vw;
+}
+
+/* Rubrik och kort ligger ovanpå bildens kant */
+.home-service-content {
+  position: relative;
+  z-index: 1;
+  width: min(760px, 82vw);
+}
+
+/* Innehållet vänsterställt när bilden ligger till höger */
+.home-service-image-right .home-service-content {
+  margin-left: clamp(24px, 8vw, 120px);
+}
+
+/* Innehållet högerställt när bilden ligger till vänster */
+.home-service-image-left .home-service-content {
+  margin-right: clamp(24px, 8vw, 120px);
+  margin-left: auto;
+}
+
+/* Tjänsternas rubrik — placerad separat ovanför den vita textrutan */
+.home-service-content h2 {
+  width: 72%;
+  margin: 0 0 18px auto;
   color: var(--ink);
   font-family: Manrope, sans-serif;
-  font-size: clamp(21px, 1.65vw, 27px);
+  font-size: clamp(25px, 2.2vw, 34px);
   font-weight: 600;
-  letter-spacing: -0.45px;
-  line-height: 1.32;
+  letter-spacing: -0.8px;
+  line-height: 1.25;
+  text-align: center;
 }
 
-/* Kortare och lättläst brödtext under varje tjänsterubrik */
-.home-service-copy p {
-  max-width: 340px;
+/* Rubrik och kort på vänsterbildsraden sitter närmare cirkelbilden */
+.home-service-image-left .home-service-content h2,
+.home-service-image-left .home-service-card {
+  margin-left: 20%;
+}
+
+/* Vit textruta — diskret kant, mjuk skugga och bekvämt inre avstånd */
+.home-service-card {
+  width: 62%;
+  min-height: 260px;
+  margin-left: auto;
+  display: grid;
+  place-items: center;
+  padding: clamp(24px, 3vw, 42px);
+  border: 7px solid #e5e8df;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 14px 36px rgba(32, 53, 45, 0.14);
+  text-align: center;
+}
+
+/* Brödtexten inne i respektive vita tjänsteruta */
+.home-service-card p {
+  max-width: 390px;
   margin: 0;
   color: var(--muted);
-  font-size: clamp(16px, 1.25vw, 19px);
-  line-height: 1.55;
+  font-size: clamp(17px, 1.45vw, 21px);
+  line-height: 1.6;
 }
 
-/* Surfplatta: behåll två tjänster på första raden men ge texten mer plats */
-@media (max-width: 1000px) {
-  .home-services-top {
-    gap: 32px;
-  }
-
-  .home-service-compact {
-    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
-    gap: 18px;
-  }
-
-  .home-service-feature {
-    width: 78%;
-    margin-left: 22%;
-  }
-
-  .home-service-copy {
-    padding-top: 14px;
-  }
-
-  .home-service-copy h2 {
-    margin-bottom: 20px;
-  }
-}
-
-/* Mobil och smal surfplatta: stapla bild ovanför text och centrera tredje tjänsten */
-@media (max-width: 700px) {
-  .home-services {
-    padding: 36px 0 48px;
-  }
-
-  .home-services-top {
-    grid-template-columns: 1fr;
-    gap: 48px;
-  }
-
-  .home-service-compact,
-  .home-service-feature {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    width: min(100%, 520px);
-    margin: 0 auto;
-  }
-
-  .home-service-feature {
-    margin-top: 52px;
+/* Surfplatta: skala ned cirklar och textrutor men behåll deras överlapp */
+@media (max-width: 900px) {
+  .home-service-row {
+    min-height: 560px;
   }
 
   .home-service-image {
-    aspect-ratio: 1.2 / 1;
+    width: clamp(390px, 58vw, 560px);
   }
 
-  .home-service-copy {
-    padding-top: 0;
+  .home-service-content {
+    width: 82vw;
   }
 
-  .home-service-copy h2 {
+  .home-service-card {
+    min-height: 230px;
+    width: 60%;
+  }
+}
+
+/* Mobil: visa hela texten i ett tydligt kort som delvis ligger framför cirkeln */
+@media (max-width: 600px) {
+  .home-services {
+    padding: 0 0 40px;
+  }
+
+  .home-service-row {
+    min-height: 570px;
+  }
+
+  .home-service-image {
+    width: min(108vw, 430px);
+  }
+
+  .home-service-image-right .home-service-image {
+    right: -34vw;
+  }
+
+  .home-service-image-left .home-service-image {
+    left: -34vw;
+  }
+
+  .home-service-content {
+    width: 100%;
+  }
+
+  .home-service-image-right .home-service-content {
+    margin-left: 0;
+  }
+
+  .home-service-image-left .home-service-content {
+    margin-right: 0;
+  }
+
+  .home-service-image-left .home-service-content h2,
+  .home-service-image-left .home-service-card {
+    margin-left: auto;
+  }
+
+  .home-service-content h2 {
+    width: 66%;
     margin-bottom: 14px;
-    font-size: clamp(23px, 6vw, 28px);
+    font-size: clamp(22px, 6vw, 27px);
+    letter-spacing: -0.35px;
   }
 
-  .home-service-copy p {
-    max-width: 100%;
+  .home-service-card {
+    width: 66%;
+    min-height: 225px;
+    padding: 22px 18px;
+    border-width: 5px;
+    border-radius: 12px;
+  }
+
+  .home-service-card p {
     font-size: 16px;
+    line-height: 1.5;
   }
 }
