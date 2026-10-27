@@ -112,49 +112,40 @@
   line-height: 1.6;
 }
 
-/* Surfplatta: skala ned cirklar och textrutor men behåll deras överlapp */
+/* Mindre skärmar: håll rubrik och kort samlade framför en större cirkelbild */
 @media (max-width: 900px) {
   .home-service-row {
-    min-height: max(56cqw, 420px);
-  }
-
-  .home-service-card {
-    min-height: clamp(180px, 18cqw, 230px);
-  }
-}
-
-/* Mobil: visa hela texten i ett tydligt kort som delvis ligger framför cirkeln */
-@media (max-width: 600px) {
-  .home-services {
-    padding: 0 0 40px;
-  }
-
-  .home-service-row {
-    min-height: max(82cqw, 360px);
+    min-height: max(64cqw, 360px);
   }
 
   .home-service-image {
-    width: 82cqw;
+    width: 64cqw;
   }
 
   .home-service-image-right .home-service-image {
-    right: -32cqw;
+    right: -16cqw;
   }
 
   .home-service-image-left .home-service-image {
-    left: -32cqw;
+    left: -16cqw;
   }
 
   .home-service-content {
-    left: 4cqw;
+    position: relative;
+    top: auto;
+    left: auto;
     width: 92cqw;
+    margin-inline: auto;
+    transform: none;
   }
 
   .home-service-content h2 {
-    width: 100%;
-    margin-bottom: 14px;
-    font-size: clamp(18px, 5.5vw, 27px);
+    width: 54%;
+    margin: 0 0 14px;
+    font-size: clamp(17px, 3.6cqw, 27px);
     letter-spacing: -0.35px;
+    text-align: center;
+    hyphens: auto;
     overflow-wrap: break-word;
   }
 
@@ -162,20 +153,42 @@
     margin-left: auto;
   }
 
+  .home-service-card {
+    width: 54%;
+    min-height: clamp(160px, 25cqw, 225px);
+    padding: clamp(14px, 2.5cqw, 22px);
+    margin-left: 0;
+    border-width: 5px;
+  }
+
   .home-service-image-left .home-service-card {
     margin-left: auto;
   }
 
+  .home-service-card p {
+    font-size: clamp(14px, 2.4cqw, 18px);
+    line-height: 1.5;
+  }
+}
+
+/* Mobil: behåll samma centrerade upplägg och skala ned måtten jämnt */
+@media (max-width: 600px) {
+  .home-services {
+    padding: 0 0 40px;
+  }
+
+  .home-service-row {
+    min-height: max(64cqw, 360px);
+  }
+
   .home-service-card {
-    width: 66%;
-    min-height: 225px;
-    padding: 22px 18px;
-    border-width: 5px;
+    min-height: clamp(155px, 30cqw, 195px);
+    padding: clamp(12px, 3cqw, 18px);
     border-radius: 12px;
   }
 
   .home-service-card p {
-    font-size: 16px;
+    font-size: clamp(13px, 3.2cqw, 16px);
     line-height: 1.5;
   }
 }
