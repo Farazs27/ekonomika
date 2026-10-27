@@ -2,15 +2,21 @@
 
 /* Tjänsteområdet — centrerad osynlig maxbredd som också beskär cirkelbilderna */
 .home-services {
-  --home-wave-overlap: clamp(80px, 23vw, 390px);
+ /*  --home-wave-overlap: clamp(48px, 12vw, 220px);*/
+  --home-wave-overlap: clamp(0px, 4vw, 80px);
+ margin-top: calc(-1 * var(--home-wave-overlap));
+  margin-bottom: var(--home-wave-overlap);
+  /*--home-wave-shift: 0px;
+  position: relative;
+  top: var(--home-wave-shift);*/
   container-type: inline-size;
   width: min(1120px, calc(100% - 48px));
   margin-inline: auto;
-  margin-top: calc(-1 * var(--home-wave-overlap));
-  margin-bottom: var(--home-wave-overlap);
+  /*margin-bottom: var(--home-wave-shift);*/
   padding: 28px 0 72px;
   overflow: hidden;
   background: transparent;
+  
 }
 
 /* Varje tjänst får en egen hög rad med plats för en stor cirkelbild */
@@ -33,6 +39,8 @@
   border-radius: 50%;
   box-shadow: 0 18px 44px rgba(32, 53, 45, 0.16);
   transform: translateY(-50%);
+  
+  
 }
 
 /* Bildens fyllning och beskärning inuti cirkeln */
