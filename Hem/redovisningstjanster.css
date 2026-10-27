@@ -13,7 +13,6 @@
   gap: clamp(36px, 6vw, 88px);
   padding-top: clamp(48px, 5vw, 72px);
   padding-bottom: clamp(48px, 5vw, 72px);
-  border-bottom: 1px dashed rgba(31, 59, 47, 0.2);
 }
 
 /* Tjänst nummer två: text till vänster och bild till höger */
