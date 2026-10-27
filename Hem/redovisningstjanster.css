@@ -1,7 +1,10 @@
 /********************************** Hem: cirkelbilder och överlappande tjänstekort **********************************/
 
-/* Tjänsteområdet på Hem-sidan — vit bakgrund och innehåll utanför sidans maxbredd */
+/* Tjänsteområdet — centrerad osynlig maxbredd som också beskär cirkelbilderna */
 .home-services {
+  container-type: inline-size;
+  width: min(1120px, calc(100% - 48px));
+  margin-inline: auto;
   padding: 28px 0 72px;
   overflow: hidden;
   background: #fff;
@@ -12,7 +15,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  container-type: inline-size;
   min-height: clamp(460px, 56cqw, 780px);
   isolation: isolate;
 }
@@ -134,19 +136,19 @@
   }
 
   .home-service-row {
-    min-height: max(82vw, 470px);
+    min-height: max(82cqw, 360px);
   }
 
   .home-service-image {
-    width: 82vw;
+    width: 82cqw;
   }
 
   .home-service-image-right .home-service-image {
-    right: -32vw;
+    right: -32cqw;
   }
 
   .home-service-image-left .home-service-image {
-    left: -32vw;
+    left: -32cqw;
   }
 
   .home-service-content {
