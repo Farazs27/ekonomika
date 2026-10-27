@@ -124,7 +124,7 @@
   max-width: 390px;
   margin: 0;
   color: var(--muted);
-  font-size: clamp(15px, 1.45cqw, 21px);
+  font-size: clamp(19px, 1.45cqw, 23px);
   line-height: 1.6;
 }
 

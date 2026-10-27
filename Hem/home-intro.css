@@ -9,8 +9,9 @@
 .home-intro {
   position: relative;
   isolation: isolate;
-  padding: clamp(170px, 20vw, 260px) 0 clamp(190px, 22vw, 280px);
+  padding: clamp(120px, 20vw, 160px) 0 clamp(190px, 22vw, 280px);
   background: var(--paper);
+   text-align: center;
  
 }
 
