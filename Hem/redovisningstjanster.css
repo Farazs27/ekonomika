@@ -45,7 +45,7 @@
 
 /* Tjänst 2: cirkeln går ut över vänsterkanten */
 .home-service-image-left .home-service-image {
-  left: -8vw;
+  left: -12vw;
 }
 
 /* Rubrik och kort ligger ovanpå bildens kant */
@@ -85,12 +85,6 @@
   text-align: right;
 }
 
-/* Rubrik och kort på vänsterbildsraden sitter närmare cirkelbilden */
-.home-service-image-left .home-service-content h2,
-.home-service-image-left .home-service-card {
-  margin-left: 20%;
-}
-
 /* Vit textruta — diskret kant, mjuk skugga och bekvämt inre avstånd */
 .home-service-card {
   width: 62%;
@@ -104,6 +98,12 @@
   background: #fff;
   box-shadow: 0 14px 36px rgba(32, 53, 45, 0.14);
   text-align: center;
+}
+
+/* På vänsterbildsraden speglas textrutan horisontellt mot högerbildsraderna */
+.home-service-image-left .home-service-card {
+  margin-left: 0;
+  margin-right: auto;
 }
 
 /* Brödtexten inne i respektive vita tjänsteruta */
@@ -169,11 +169,6 @@
     margin-right: 0;
   }
 
-  .home-service-image-left .home-service-content h2,
-  .home-service-image-left .home-service-card {
-    margin-left: auto;
-  }
-
   .home-service-content h2 {
     width: 60%;
     margin-bottom: 14px;
@@ -183,6 +178,11 @@
 
   .home-service-image-left .home-service-content h2 {
     margin-left: auto;
+  }
+
+  .home-service-image-left .home-service-card {
+    margin-left: 0;
+    margin-right: auto;
   }
 
   .home-service-card {
