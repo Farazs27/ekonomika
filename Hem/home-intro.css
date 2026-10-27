@@ -1,6 +1,6 @@
 /********************************** Hem: presentationstext på vågformad grön bakgrund **********************************/
 
-/* Startsidessektionen — text och myntformad bild på sidans vanliga bakgrund */
+/* Startsidessektionen — presentationstext framför den gröna vågformen */
 .home-intro {
   position: relative;
   isolation: isolate;
@@ -8,12 +8,12 @@
   background: var(--paper);
 }
 
-/* Grön vågformad bakgrund bakom introtexten och myntbilden */
+/* Grön vågformad bakgrund bakom introtexten */
 .home-intro::before {
   position: absolute;
   z-index: -1;
   inset: 0;
-  background: url("../General/assets/home-intro-shape.svg") center / 100% 100% no-repeat;
+  background: url("../General/assets/home-intro-shape.svg") left center / 107% 100% no-repeat;
   content: "";
 }
 
@@ -33,7 +33,7 @@
   line-height: 1.75;
 }
 
-/* Mobil och smala fönster — texten visas före myntformen */
+/* Mobil och smala fönster — behåll luft runt introtexten */
 @media (max-width: 680px) {
   .home-intro {
     padding: clamp(130px, 28vw, 170px) 0 clamp(150px, 32vw, 190px);
