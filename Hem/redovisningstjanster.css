@@ -115,7 +115,7 @@
 /* Mindre skärmar: håll rubrik och kort samlade framför en större cirkelbild */
 @media (max-width: 900px) {
   .home-service-row {
-    min-height: max(64cqw, 360px);
+    min-height: max(64cqw, 380px);
   }
 
   .home-service-image {
@@ -131,12 +131,12 @@
   }
 
   .home-service-content {
-    position: relative;
-    top: auto;
-    left: auto;
+    position: absolute;
+    top: 46%;
+    left: 4cqw;
     width: 92cqw;
-    margin-inline: auto;
-    transform: none;
+    margin: 0;
+    transform: translateY(-50%);
   }
 
   .home-service-content h2 {
@@ -178,7 +178,16 @@
   }
 
   .home-service-row {
-    min-height: max(64cqw, 360px);
+    min-height: max(64cqw, 380px);
+  }
+
+  .home-service-content {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 92cqw;
+    margin: 0 0 0 4cqw;
+    transform: translateY(-6%);
   }
 
   .home-service-card {
