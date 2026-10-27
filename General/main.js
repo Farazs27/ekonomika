@@ -105,43 +105,29 @@ function alignHomeWaveWithFirstCircle() {
   document.fonts?.ready.then(scheduleAlignment);
 }
 
-/* Kontaktformulär — skicka meddelandet till Ekonomikas e-post via FormSubmit */
+/* Kontaktformulär — fyll i en returadress och låt FormSubmit sköta POST-skicket */
 function activateContactForm() {
   const form = document.querySelector('#contact-form');
   if (!form) return;
 
   const submitButton = form.querySelector('button[type="submit"]');
   const status = document.querySelector('#contact-form-note');
+  const nextUrl = form.querySelector('input[name="_next"]');
 
-  form.addEventListener('submit', async (event) => {
-    event.preventDefault();
+  if (new URLSearchParams(window.location.search).has('skickat')) {
+    status.textContent = 'Tack! Ditt meddelande är skickat. Vi återkommer så snart vi kan.';
+    const cleanUrl = new URL(window.location.href);
+    cleanUrl.searchParams.delete('skickat');
+    window.history.replaceState({}, '', cleanUrl);
+  }
+
+  form.addEventListener('submit', () => {
+    const redirectUrl = new URL(window.location.href);
+    redirectUrl.searchParams.set('skickat', '1');
+    redirectUrl.hash = 'contact-form';
+    nextUrl.value = redirectUrl.toString();
     submitButton.disabled = true;
     status.textContent = 'Skickar ditt meddelande…';
-
-    try {
-      const response = await fetch(form.action, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
-        body: JSON.stringify(Object.fromEntries(new FormData(form).entries())),
-      });
-      const result = await response.json();
-
-      /* FormSubmit kan svara med HTTP 200 även när formuläret ännu inte är aktiverat */
-      if (String(result.success) !== 'true') {
-        throw new Error(result.message || 'Formuläret kunde inte skickas.');
-      }
-
-      form.reset();
-      status.textContent = 'Tack! Ditt meddelande är skickat. Vi återkommer så snart vi kan.';
-    } catch (error) {
-      console.error('Kontaktformuläret kunde inte skickas.', error);
-      status.textContent = 'Det gick inte att skicka meddelandet just nu. Försök igen eller mejla ekonomikakontakt@gmail.com.';
-    } finally {
-      submitButton.disabled = false;
-    }
   });
 }
 
