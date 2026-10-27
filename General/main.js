@@ -105,20 +105,43 @@ function alignHomeWaveWithFirstCircle() {
   document.fonts?.ready.then(scheduleAlignment);
 }
 
-/* Kontaktformulär — öppna besökarens e-postapp med ifyllda mottagare och meddelande */
+/* Kontaktformulär — skicka meddelandet till Ekonomikas e-post via FormSubmit */
 function activateContactForm() {
   const form = document.querySelector('#contact-form');
   if (!form) return;
 
-  form.addEventListener('submit', (event) => {
+  const submitButton = form.querySelector('button[type="submit"]');
+  const status = document.querySelector('#contact-form-note');
+
+  form.addEventListener('submit', async (event) => {
     event.preventDefault();
+    submitButton.disabled = true;
+    status.textContent = 'Skickar ditt meddelande…';
 
-    const email = form.elements.email.value.trim();
-    const message = form.elements.message.value.trim();
-    const subject = encodeURIComponent('Kontakt med Ekonomika');
-    const body = encodeURIComponent(`E-post från: ${email}\n\nMeddelande:\n${message}`);
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(Object.fromEntries(new FormData(form).entries())),
+      });
+      const result = await response.json();
 
-    window.location.href = `mailto:ekonomikakontakt@gmail.com?subject=${subject}&body=${body}`;
+      /* FormSubmit kan svara med HTTP 200 även när formuläret ännu inte är aktiverat */
+      if (String(result.success) !== 'true') {
+        throw new Error(result.message || 'Formuläret kunde inte skickas.');
+      }
+
+      form.reset();
+      status.textContent = 'Tack! Ditt meddelande är skickat. Vi återkommer så snart vi kan.';
+    } catch (error) {
+      console.error('Kontaktformuläret kunde inte skickas.', error);
+      status.textContent = 'Det gick inte att skicka meddelandet just nu. Försök igen eller mejla ekonomikakontakt@gmail.com.';
+    } finally {
+      submitButton.disabled = false;
+    }
   });
 }
 
