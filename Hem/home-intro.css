@@ -13,9 +13,8 @@
   position: absolute;
   z-index: -1;
   inset: 0;
-  background: url("../General/assets/home-intro-shape.svg") center / 100% 100% no-repeat;
+  background: url("../General/assets/home-intro-shape.svg") left center / 107% 100% no-repeat;
   content: "";
-  margin-right: 100px;
 }
 
 /* Introtexten får en egen kolumn i den centrerade innehållsytan */
