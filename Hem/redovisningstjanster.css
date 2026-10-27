@@ -215,3 +215,8 @@
   }
 }
 
+@media (max-width: 600px) {
+  .home-services {
+    --home-wave-overlap: 20px; /* Ändra till det värde som passar bäst på mobil */
+  }
+}
