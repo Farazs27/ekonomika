@@ -15,6 +15,7 @@
   inset: 0;
   background: url("../General/assets/home-intro-shape.svg") center / 100% 100% no-repeat;
   content: "";
+  margin-right: 100px;
 }
 
 /* Introtexten får en egen kolumn i den centrerade innehållsytan */
