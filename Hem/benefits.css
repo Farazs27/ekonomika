@@ -6,7 +6,7 @@
     .strip {
       border-top: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
-      background: #f1f2eb;
+      background: #fff;
     }
     /* Fördelarna — innehållsbredd, avstånd och textfärg */
     .strip-inner {

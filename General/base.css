@@ -7,7 +7,7 @@
       --green: #315d49;
       --dark: #244536;
       --lime: #d9e7c8;
-      --paper: #f7f7f2;
+      --paper: #fff;
       --white: #fff;
       --line: #e5e8df;
       --serif: Georgia,'Times New Roman',serif;
@@ -132,6 +132,11 @@
       background: var(--green);
       font-weight: 600;
       transition: background-color .2s;
+    }
+    /* Pilen i knappen ”Kontakt” — vanlig teckenpil även på mobil */
+    .nav-cta-arrow {
+      font-family: Arial, sans-serif;
+      font-variant-emoji: text;
     }
     /* Knappen ”Kontakt” — tona bara knappens bakgrund, behåll vit text utan understreck */
     .nav-links .nav-cta:hover,
